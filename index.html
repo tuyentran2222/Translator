@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/383c0b5f98.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea name="" id="" cols="30" rows="10" class="from-text" placeholder="Enter text"></textarea>
+                <textarea name="" id="" cols="30" rows="10" class="to-text" placeholder="Translation" readonly disabled></textarea>
+
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i class='bx bx-volume-full' id="volume-from-icon"></i>
+                        <i class='bx bx-copy' id="copy-from-icon"></i>
+                    </div>
+                    <select name="" id="">
+    
+                    </select>
+                </li>
+                <li class="exchange"><i class='bx bx-sort bx-rotate-90' ></i></li>
+                <li class="row to">
+                    <select name="" id="">
+                        
+                    </select>
+                    <div class="icons">
+                        <i class='bx bx-volume-full' id="volumne-to-icon"></i>
+                        <i class='bx bx-copy' id="copy-to-icon"></i>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        <button id="translate">Translate Text</button>
+        <div id="toast">
+        </div>
+
+    </div>
+    <script src="./countries.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
